@@ -1,21 +1,26 @@
-# See https://help.github.com/ignore-files/ for more about ignoring files.
+node_modules/
+build/
+*.[oa]
+*~
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
 
-# dependencies
-/node_modules
+# Folder config file
+Desktop.ini
 
-# testing
-/coverage
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
 
-# production
-/build
-
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+!src/node_modules
