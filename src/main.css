@@ -5,17 +5,54 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	
 }
-button {
+button,
+.btn.btn-primary,
+.btn.btn-primary:active
+ {
 	outline: none;
 }
-
+.logo {
+	text-align: center;
+	margin-bottom: 100px;
+}
 .sidebar {
 	background: #fff;
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100px;
+	width: 150px;
 	height: 100%;
+}
+.cartSpan {
+	color: #ccc;
+}
+.dropdown {
+	display: block;
+	padding: 10px;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	margin: 5px;
+	margin-top: 20px;
+	text-align: center;
+}
+.dropdown:hover {
+	border: 1px solid #ccc;
+	cursor: pointer;
+}
+.sidebar .dropdown img {
+	margin: 10px;
+
+}
+.btn-item {
+	margin-top: 200px;
+}
+.dropdown input {
+	width: 120px;
+	border: none;
+	background: #fff;
+	border-bottom: 1px solid #000;
+	outline: none;
+	color: black;
 }
 .menu {
 	position: fixed;
@@ -27,7 +64,7 @@ button {
 	width: 100%;
 	height: 800px;
 	text-align: center;
-	background: url(../public/images/bg_main.jpg) center center no-repeat;
+	background: url(/uploads/bg_main.jpg) center center no-repeat;
 	background-size: cover;
 }
 
@@ -45,19 +82,31 @@ button {
 	color: #fff;
 	padding: 10px 20px;
 }
-
+.btn.btn-primary:active,
 .main button:active {
 	background: #0023ff;
 }
+.btn.btn-primary:hover,
 .main button:hover {
 	background-color: #3b55ff;
 	cursor: pointer;
 }
 
-.furniture h2 {
+ h2 {
 	padding: 20px 0;
 	margin-left: 20px;
 	font-size: 4rem;
+}
+
+.furnitureItem{
+	text-align: center;
+}
+.contentList {
+	margin-top: 80px;
+}
+.contentList li {
+	margin-bottom: 20px;
+	font-size: 2rem;
 }
 
 
@@ -745,4 +794,8 @@ footer {
 	-o-transform: translateY(0px);
 	-ms-transform: translateY(0px);
 	transform: translateY(0px);
+}
+.btn.btn-primary {
+	background-color: #001390;
+	margin-right: 10px;
 }

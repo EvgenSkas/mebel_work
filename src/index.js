@@ -13,23 +13,24 @@ import Layout from 'containers/layout';
 // import Chairs from 'containers/chairs';
 import Main from 'containers/main';
 import Furniture from 'containers/furniture';
-
+import FurnitureItem from 'containers/furnitureItem';
 
 const store = createStore( reducers, composeWithDevTools(
 	applyMiddleware(thunk)
 ));
 
 const history = syncHistoryWithStore( browserHistory, store)
-console.log(store.getState())
 ReactDOM.render(
 	<Provider store={store}>
 		<Router history={history}>
 			<Route component={Layout}>
 				<Route path="/" component={Main} />
 				<Route path="/furniture" component={Furniture} />
+				<Route path="/furniture/:id" component={FurnitureItem} />
+				<Route path="/categories/:id" component={Furniture} />
 
 			</Route>
-			{/* <Route path="phones/:id" component={Phone} />
+			{/* 
 			<Route path="/basket" component={Basket} /> */}
 		</Router>
 	</Provider>,
