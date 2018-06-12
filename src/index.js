@@ -14,6 +14,7 @@ import Layout from 'containers/layout';
 import Main from 'containers/main';
 import Furniture from 'containers/furniture';
 import FurnitureItem from 'containers/furnitureItem';
+import Basket from 'containers/basket';
 
 const store = createStore( reducers, composeWithDevTools(
 	applyMiddleware(thunk)
@@ -28,10 +29,8 @@ ReactDOM.render(
 				<Route path="/furniture" component={Furniture} />
 				<Route path="/furniture/:id" component={FurnitureItem} />
 				<Route path="/categories/:id" component={Furniture} />
-
+				<Route path="/basket" component={Basket} />
 			</Route>
-			{/* 
-			<Route path="/basket" component={Basket} /> */}
 		</Router>
 	</Provider>,
 	document.getElementById('root')

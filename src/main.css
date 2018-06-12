@@ -50,9 +50,9 @@ button,
 	width: 120px;
 	border: none;
 	background: #fff;
-	border-bottom: 1px solid #000;
+	border-bottom: 1px solid rgb(174, 174, 174);
 	outline: none;
-	color: black;
+	color: #CCC;
 }
 .menu {
 	position: fixed;
@@ -62,10 +62,11 @@ button,
 
 .main {
 	width: 100%;
-	height: 800px;
+	height: auto;
 	text-align: center;
 	background: url(/uploads/bg_main.jpg) center center no-repeat;
 	background-size: cover;
+	min-height: 740px;
 }
 
 .main h1 {
@@ -108,8 +109,12 @@ button,
 	margin-bottom: 20px;
 	font-size: 2rem;
 }
-
-
+.basket {
+	margin-top: 40px;
+}
+.basket button {
+	margin-top: 20px;
+}
 /*
  * Made by Erik Terwan
  * 24th of November 2015
